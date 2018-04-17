@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>API Reference</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/all.js"></script>
+
+
+          <script>
+        $(function() {
+            setupLanguages(["bash","javascript"]);
+        });
+      </script>
+      </head>
+
+  <body class="">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" />
+      </span>
+    </a>
+    <div class="tocify-wrapper">
+        <img src="images/logo.png" />
+                    <div class="lang-selector">
+                                  <a href="#" data-language-name="bash">bash</a>
+                                  <a href="#" data-language-name="javascript">javascript</a>
+                            </div>
+                            <div class="search">
+              <input type="text" class="search" id="input-search" placeholder="Search">
+            </div>
+            <ul class="search-results"></ul>
+              <div id="toc">
+      </div>
+                    <ul class="toc-footer">
+                                  <li><a href='http://github.com/mpociot/documentarian'>Documentation Powered by Documentarian</a></li>
+                            </ul>
+            </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+          <!-- START_INFO -->
+<h1>Info</h1>
+<p>Welcome to the generated API reference.
+<a href="http://localhost/docs/collection.json">Get Postman Collection</a></p>
+<!-- END_INFO -->
+<h1>general</h1>
+<!-- START_2be1f0e022faf424f18f30275e61416e -->
+<h2>api/v1/auth/login</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "http://localhost/api/v1/auth/login" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://localhost/api/v1/auth/login",
+    "method": "POST",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/v1/auth/login</code></p>
+<!-- END_2be1f0e022faf424f18f30275e61416e -->
+<!-- START_358c266f9120951dbbcb0cf2453538c9 -->
+<h2>Display a listing of the resource.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET "http://localhost/api/v1/post" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://localhost/api/v1/post",
+    "method": "GET",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "posts": [
+        {
+            "id": 7,
+            "user_id": 1,
+            "titulo": "aqweqweqweqe",
+            "descricao": "&lt;p&gt;Mussum Ipsum, cacilds vidis litro abertis. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. In elementis m&amp;eacute; pra quem &amp;eacute; amistosis quis leo. A ordem dos tratores n&amp;atilde;o altera o p&amp;atilde;o duris. Suco de cevadiss, &amp;eacute; um leite divinis, qui tem lupuliz, matis, aguis e fermentis.&lt;\/p&gt;&lt;p&gt;Sapien in monti palavris qui num significa nadis i pareci latim.&amp;nbsp; Per aumento de cachacis, eu reclamis. Si num tem leite ent&amp;atilde;o bota uma pinga a&amp;iacute; cumpadi! Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.&lt;\/p&gt;&lt;p&gt;Interagi no m&amp;eacute;, cursus quis, vehicula ac nisi. Paisis, filhis, espiritis santis. Quem num gosta di m&amp;eacute;, boa gentis num &amp;eacute;. Detraxit consequat et quo num tendi nada.&lt;\/p&gt;",
+            "situacao": "A",
+            "created_at": "2018-04-17 11:46:04",
+            "updated_at": "2018-04-17 11:46:04"
+        },
+        {
+            "id": 5,
+            "user_id": 1,
+            "titulo": "Laravel 5.6",
+            "descricao": "&lt;p&gt;&lt;span style=\"font-family: Impact,Charcoal,sans-serif;\"&gt;Mussum Ipsum, cacilds vidis litro abertis. Interagi no m&amp;eacute;, cursus quis, vehicula ac nisi. Viva Forevis aptent taciti sociosqu ad litora torquent. T&amp;aacute; deprimidis, eu conhe&amp;ccedil;o uma cachacis que pode alegrar sua vidis. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.&lt;\/span&gt;&lt;\/p&gt;&lt;p&gt;&lt;span style=\"font-family: Impact,Charcoal,sans-serif;\"&gt;Atirei o pau no gatis, per gatis num morreus. Em p&amp;eacute; sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Aenean aliquam molestie leo, vitae iaculis nisl. Copo furadis &amp;eacute; disculpa de bebadis, arcu quam euismod magna.&lt;\/span&gt;&lt;\/p&gt;&lt;p&gt;&lt;span style=\"font-family: Impact,Charcoal,sans-serif;\"&gt;Casamentiss faiz malandris se pirulit&amp;aacute;. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Leite de capivaris, leite de mula manquis sem cabe&amp;ccedil;a. Si u mundo t&amp;aacute; muito paradis? Toma um m&amp;eacute; que o mundo vai girarzis!&lt;\/span&gt;&lt;\/p&gt;&lt;p&gt;&lt;span style=\"font-family: Impact,Charcoal,sans-serif;\"&gt;Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Quem num gosta di m&amp;eacute;, boa gentis num &amp;eacute;. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Si num tem leite ent&amp;atilde;o bota uma pinga a&amp;iacute; cumpadi!&lt;\/span&gt;&lt;\/p&gt;&lt;p&gt;&lt;span style=\"font-family: Impact,Charcoal,sans-serif;\"&gt;Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. N&amp;atilde;o sou faixa preta cumpadi, sou preto inteiris, inteiris. Suco de cevadiss deixa as pessoas mais interessantis. Todo mundo v&amp;ecirc; os porris que eu tomo, mas ningu&amp;eacute;m v&amp;ecirc; os tombis que eu levo!&lt;\/span&gt;&lt;\/p&gt;",
+            "situacao": "A",
+            "created_at": "2018-04-17 11:42:06",
+            "updated_at": "2018-04-17 11:45:03"
+        }
+    ]
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/v1/post</code></p>
+<p><code>HEAD api/v1/post</code></p>
+<!-- END_358c266f9120951dbbcb0cf2453538c9 -->
+<!-- START_e600f513eafc60ca786bc77318c0a6a2 -->
+<h2>Display the specified resource.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET "http://localhost/api/v1/post/{id}" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://localhost/api/v1/post/{id}",
+    "method": "GET",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "post": null
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/v1/post/{id}</code></p>
+<p><code>HEAD api/v1/post/{id}</code></p>
+<!-- END_e600f513eafc60ca786bc77318c0a6a2 -->
+<!-- START_7a2421ca325308a8d8e5aa4d74af0a50 -->
+<h2>Store a newly created resource in storage.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "http://localhost/api/v1/post" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://localhost/api/v1/post",
+    "method": "POST",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/v1/post</code></p>
+<!-- END_7a2421ca325308a8d8e5aa4d74af0a50 -->
+<!-- START_0221415174d7c132b4c1bf02bbffd320 -->
+<h2>Update the specified resource in storage.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X PUT "http://localhost/api/v1/post/{id}" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://localhost/api/v1/post/{id}",
+    "method": "PUT",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<h3>HTTP Request</h3>
+<p><code>PUT api/v1/post/{id}</code></p>
+<!-- END_0221415174d7c132b4c1bf02bbffd320 -->
+<!-- START_f0fd38b1ed5b3260975cc56578f35ce7 -->
+<h2>Remove the specified resource from storage.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X DELETE "http://localhost/api/v1/post/{id}" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://localhost/api/v1/post/{id}",
+    "method": "DELETE",
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});</code></pre>
+<h3>HTTP Request</h3>
+<p><code>DELETE api/v1/post/{id}</code></p>
+<!-- END_f0fd38b1ed5b3260975cc56578f35ce7 -->
+      </div>
+      <div class="dark-box">
+                        <div class="lang-selector">
+                                    <a href="#" data-language-name="bash">bash</a>
+                                    <a href="#" data-language-name="javascript">javascript</a>
+                              </div>
+                </div>
+    </div>
+  </body>
+</html>
